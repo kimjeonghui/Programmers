@@ -6,7 +6,7 @@ class Solution {
         int p = 0;
         int y = 0;
         
-        /*for(char x : c){
+        /*for(char x : c){  향상된 반복문은 반복할 수 있는 배열만 가능
            if(x == 'P'){
                p++;
                continue;
