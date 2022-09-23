@@ -1,8 +1,8 @@
 class Solution {
     public int solution(int num) {
         int answer = 0;
+        long n = num; //오버플로우 
         
-        long n = num;
         if( num ==1) return 0;
         for(int i=0; i<500; i++){
             if(n != 1){ //n이 1이 아닌 경우
