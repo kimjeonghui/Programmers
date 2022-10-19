@@ -13,7 +13,7 @@ class Solution {
         ArrayList<Integer> list = new ArrayList<>();
         
     
-        while(n>=3){
+        while(n>=3){ //3이 포함되는게 중요
             int i = n % 3;
             list.add(i);
             n = n/3;
