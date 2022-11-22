@@ -15,8 +15,8 @@ class Solution {
             char c1 = words[i].charAt(words[i].length()-1);
             char c2 = words[i+1].charAt(0);
             if(c1 != c2){
-                answer[0] = i%n +1;
-                answer[1] = i/n +1 ;
+                //answer[0] = i%n +1;
+                //answer[1] = i/n +1 ;
                 break;
             }
             else{
@@ -24,8 +24,8 @@ class Solution {
                     return new int[]{0, 0};
                 }
                 else if(i == words.length-2 && list.contains(words[i+1])){
-                    answer[0] = i%n +1;
-                    answer[1] = i/n +1 ;
+                    //answer[0] = i%n +1;
+                    //answer[1] = i/n +1 ;
                     break;
                 }
                 
