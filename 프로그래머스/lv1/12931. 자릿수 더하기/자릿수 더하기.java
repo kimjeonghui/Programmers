@@ -12,8 +12,7 @@ public class Solution {
            // cnt = n/10;
         }
         
-       
-    
+      
         return answer;
     }
 }
