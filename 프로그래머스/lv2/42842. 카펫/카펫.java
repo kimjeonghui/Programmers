@@ -18,15 +18,15 @@ class Solution {
         //가로는 세로와 같거나 더 큼
        while(check){
            
-           for(int i=3; i<=x; i++){
-               if(sum % i ==0){
+           for(int i=1; i<=x; i++){
+               //if(sum % i ==0){
                 if(x+ i == XPlusY && x*i == XMulY)  {
                     answer[0] = x;
                     answer[1] = i;
                     check = false;
                     break;
                 }
-               }
+               //}
                //x++;
            }
            x++;
