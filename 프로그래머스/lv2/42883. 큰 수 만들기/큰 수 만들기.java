@@ -7,6 +7,7 @@ class Solution {
         //StringBuilder사용 안할 시 시간 초과
         StringBuilder sb = new StringBuilder();
         
+        
         for(int m=0; m<number.length()-k; m++){
              int max =0;
            
@@ -17,7 +18,7 @@ class Solution {
                 if( max < number.charAt(i) -'0'){
                    max = number.charAt(i) -'0'; 
                     index = i+1;
-                    if(max ==9 )break;
+                    //if(max ==9 )break;
                     }  
                 }
                 sb.append( String.valueOf(max));
