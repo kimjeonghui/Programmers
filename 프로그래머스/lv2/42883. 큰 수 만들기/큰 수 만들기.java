@@ -18,7 +18,7 @@ class Solution {
                 if( max < number.charAt(i) -'0'){
                    max = number.charAt(i) -'0'; 
                     index = i+1;
-                    //if(max ==9 )break;
+                    if(max ==9 )break;
                     }  
                 }
                 sb.append( String.valueOf(max));
