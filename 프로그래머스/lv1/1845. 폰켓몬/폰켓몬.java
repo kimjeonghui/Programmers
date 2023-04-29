@@ -12,7 +12,7 @@ class Solution {
                 hash.put(nums[i],1);
             }
             else{
-                hash.replace(nums[i], hash.get(nums[i] + 1));
+                hash.replace(nums[i], hash.get(nums[i] )+1);
             }
         }
         /* 
