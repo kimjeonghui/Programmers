@@ -1,28 +1,22 @@
+import java.util.*;
+
 class Solution {
-    static int t;
     static int cnt=0;
+    
     public int solution(int[] numbers, int target) {
-       //재귀 -> dfs 인가?
-        //for(numbers.length)
-        // + numbers[i] 경우
-        // - numbers[i] 경우
-        //i가 마지막인 경우 && 합이 타겟인 경우 cnt++;
-        t = target;
-        dfs(numbers, 0, 0);
-        
-     
-        
+        dfs(0, numbers.length, numbers, 0, target);
         return cnt;
     }
     
-    static public void dfs(int[] numbers, int depth, int sum){
-        if(depth==numbers.length){
-            if(sum == t) cnt++;
-        } 
-        else{
-            dfs(numbers, depth+1, sum+ numbers[depth]);
-            dfs(numbers, depth+1, sum- numbers[depth]);
+    public static void dfs(int now, int depth, int[] numbers, int num, int target){
+        if(now == depth){
+            if(num == target) { 
+                cnt++;
+            }
+            return;
         }
+        
+        dfs(now+1, depth, numbers, num + numbers[now], target);
+        dfs(now+1, depth, numbers, num - numbers[now], target);
     }
-    
 }
